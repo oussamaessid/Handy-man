@@ -20,8 +20,7 @@ Route::resource('/provider', App\Http\Controllers\ProviderController::class);
 Route::resource('/subcategory', App\Http\Controllers\SubCategoryController::class);
 Route::resource('/category', App\Http\Controllers\CategoryController::class);
 Route::resource('/service', App\Http\Controllers\ServiceController::class);
-Route::resource('/user', \App\Http\Controllers\Auth\UserMan\user::class);
-
+Route::resource('/user', App\Http\Controllers\Auth\UserMan\user::class);
 
 
 Route::get('/', function () {
@@ -30,8 +29,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
 
 
 Route::group(['middleware' => ['auth']], function() {

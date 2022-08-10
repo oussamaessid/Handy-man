@@ -14,18 +14,39 @@ class CreateAdminUserSeeder extends Seeder
      */
     public function run()
     {
-        $user = User::create([
+        $admin = User::create([
             'name' => 'admin', 
-            'email' => 'admin@email.com',
-            'password' => bcrypt('123456789')
-        ]);    
+            'email' => 'admin@gmail.com',
+            'password' => bcrypt('123456789'),
+            'role_as' => 'admin'
+        ]); 
 
-        $role = Role::create(['name' => 'Admin']);   
+        $writer = User::create([
+            'name'=>'writer',
+            'email'=>'writer@gmail.com',
+            'password'=>bcrypt('123456789'),
+            'role_as' => 'writer'
+        ]);
+
+        $provider = User::create([
+            'name'=>'provider',
+            'email'=>'provider@gmail.com',
+            'password'=>bcrypt('123456789'),
+            'role_as' => 'provider'
+        ]);
+
+        $admin_role = Role::create(['name' => 'admin']);
+        $writer_role = Role::create(['name' => 'writer']); 
+        $provider_role = Role::create(['name' => 'provider']);
+
 
         $permissions = Permission::pluck('id','id')->all();   
 
-        $role->syncPermissions($permissions);    
+        $admin_role->syncPermissions($permissions);    
 
-        $user->assignRole([$role->id]);
+        $admin->assignRole($admin_role);
+        $writer->assignRole($writer_role);
+        $provider->assignRole($provider_role);
+
     }
 }

@@ -1,5 +1,7 @@
 @extends('service.layout')
 @section('content')
+
+@canany('service-list', 'service-edit','service-delete')
     <div class="container">
         <div class="row">
 
@@ -52,4 +54,5 @@
             </div>
         </div>
     </div>
+@endcan
 @endsection

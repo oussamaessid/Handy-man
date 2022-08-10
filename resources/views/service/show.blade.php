@@ -1,7 +1,7 @@
 @extends('service.layout')
 @section('content')
 
-
+@canany('service-list')
 <div class="card">
   <div class="card-header">Services Page</div>
   <div class="card-body">
@@ -17,3 +17,4 @@
 
   </div>
 </div>
+@endcan

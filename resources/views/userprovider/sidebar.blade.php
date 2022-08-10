@@ -46,7 +46,6 @@
 
 
 
- 
     <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSubCategory"
@@ -63,7 +62,8 @@
         </div>
     </li>
 
- 
+
+
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseservice"
@@ -79,7 +79,7 @@
             </div>
         </div>
     </li>
-
+ 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
         <a class="nav-link" href="charts.html">
@@ -102,32 +102,8 @@
         </div>
     </li>
  
-    <!-- Nav Item - Charts -->
-
-    <li class="nav-item">
-        <a class="nav-link" href="charts.html">
-            <i class="fa fa-address-book" aria-hidden="true"></i>
-            <span>Booking</span></a>
-    </li>
+ 
     <!-- Nav Item - Utilities Collapse Menu -->
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHandyman"
-            aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <span>handyman</span>
-        </a>
-        <div id="collapseHandyman" class="collapse" aria-labelledby="headingamir"
-            data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="utilities-color.html">hand</a>
-                <a class="collapse-item" href="utilities-border.html">hand</a>
-                <a class="collapse-item" href="utilities-animation.html">hand</a>
-                <a class="collapse-item" href="utilities-other.html">hand</a>
-            </div>
-        </div>
-    </li>
 
     <!-- Divider
     <hr class="sidebar-divider">
@@ -138,34 +114,17 @@
     </div> -->
 
 
-    <!-- Nav Item - Charts -->
-
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseuser"
-           aria-expanded="true" aria-controls="collapseUtilities">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <span>user</span>
-        </a>
-        <div id="collapseuser" class="collapse" aria-labelledby="headingamir"
-             data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Utilities:</h6>
-                <a class="collapse-item" href="users">liste user</a>
-                <a class="collapse-item" href="roles">liste role</a>>
-            </div>
-        </div>
-    </li>
 
 
 
-    <!-- Nav Item - Tables -->
+     <!-- Nav Item - Tables -->
     <li class="nav-item">
         <a class="nav-link" href="tables.html">
             <i class="fa fa-money" aria-hidden="true"></i>
             <span>Payment</span></a>
     </li>
 
-
+    
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 

@@ -1,6 +1,7 @@
 @extends('service.layout')
 @section('content')
 
+@canany( 'service-edit')
     <div class="card">
         <div class="card-header">subcategory Page</div>
         <div class="card-body">
@@ -18,5 +19,5 @@
 
         </div>
     </div>
-
+@endcan
 @stop
